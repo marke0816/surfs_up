@@ -45,7 +45,7 @@ In addition to the temperatures, we should also investigate the precipitation da
 session.query(Measurement.date, Measurement.precipitation).filter(extract('month', Measurement.date)==XX).all()
 ```
 
-Where `XX` denotes the month of interest as an integer ranging from 0 to 12.
+Where `XX` denotes the month of interest as an integer ranging from 1 to 12.
 
 - Tourism data
 
